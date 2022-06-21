@@ -1,0 +1,102 @@
+.Founder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 700px) {
+  .Founder {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.Founder > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#FounderPhoto {
+  width: min(60%, 350px);
+  background-color: var(--dark-green);
+  padding: 0.3em;
+  margin-bottom: 1em;
+}
+
+@media (max-width: 700px) {
+  #FounderPhoto {
+    cursor: pointer;
+  }
+}
+
+.Founder > div > div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-bottom: 0.3em;
+}
+
+.FontUnderline {
+  font-size: clamp(6px, 5.5vw, 22px);
+  font-weight: bold;
+  text-decoration: underline;
+  color: var(--dark-green);
+}
+
+.FontSmall {
+  font-size: clamp(5px, 4vw, 16px);
+  color: rgb(70, 70, 70);
+  margin-left: 0.5em;
+}
+
+.FontSmaller {
+  font-size: clamp(5px, 4vw, 15px);
+  color: rgb(116, 116, 116);
+}
+
+.Founder > div > div > img {
+  filter: var(--light-grey-filter);
+  margin-top: 1em;
+  height: clamp(10px, 5vw, 25px);
+  margin-right: 0.7em;
+}
+
+.Biography {
+  max-width: 800px;
+  font-size: clamp(5px, 4vw, 16px);
+  margin-top: 1em;
+  margin-bottom: 2em;
+  line-height: 1.5em;
+}
+
+.Header {
+  font-size: clamp(6px, 5.5vw, 20px);
+  color: var(--dark-green);
+  margin-bottom: 1em;
+  font-weight: bold;
+  align-self: flex-start;
+}
+
+.Paragraph {
+  margin-bottom: 1em;
+  line-height: 1.3em;
+  text-align: left;
+  display: flex;
+  align-self: flex-start;
+}
+
+@media (min-width: 700px) {
+  .Paragraph {
+    text-align: justify;
+  }
+}
+
+.Socials > img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}

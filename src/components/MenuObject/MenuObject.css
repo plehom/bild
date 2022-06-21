@@ -1,0 +1,54 @@
+.MenuObject {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: fit-content;
+}
+
+.MenuObjectContainer {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  height: fit-content;
+}
+
+.MenuObjectContainer > div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.ShortVersion {
+  width: 100%;
+  padding: 0.8em;
+  justify-content: space-between;
+  border-radius: 5px;
+  margin: 1px 0;
+  cursor: pointer;
+}
+
+.ShortVersion:hover {
+  background-color: #104908;
+}
+
+.MenuObjectContainer > div > img {
+  width: min(4vw, 20px);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
+    hue-rotate(13deg) brightness(105%) contrast(104%);
+}
+
+.MenuObjectContainer > div > span {
+  /* color: #afafaf; */
+  color: white;
+  font-size: min(4vw, 16px);
+  white-space: nowrap;
+  font-family: "Maven Pro", sans-serif;
+}
+
+.ShortVersionSpan {
+  width: 100%;
+  text-align: center;
+  margin-right: 0.5em;
+}

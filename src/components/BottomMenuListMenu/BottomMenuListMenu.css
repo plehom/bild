@@ -1,0 +1,47 @@
+.BottomMenuListMenu {
+  width: 100%;
+  height: 100%;
+  /* background-color: grey; */
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 650px) {
+  .BottomMenuListMenu {
+    margin-top: 1em;
+  }
+}
+
+.DropDownMenuBottomMenu {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5em;
+  justify-content: space-between;
+}
+
+.DropDownMenuBottomMenu > span {
+  margin: 0.1em 0;
+  cursor: pointer;
+}
+
+.BottomMenuListMenu > span {
+  white-space: nowrap;
+}
+
+.HeaderContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.HeaderContainer > img {
+  width: 1.5em;
+}
+
+.Underline {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(204, 204, 204);
+}

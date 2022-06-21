@@ -1,0 +1,37 @@
+.FAQquestion {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.FAQquestion > span {
+  font-family: "Maven Pro", sans-serif;
+  font-size: min(4vw, 20px);
+  color: black;
+  padding: min(5vw, 25px);
+}
+
+.FAQquestionHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: min(5vw, 25px);
+  cursor: pointer;
+}
+
+.FAQquestionHeader > span {
+  font-family: "Maven Pro", sans-serif;
+  font-size: min(4vw, 20px);
+  font-weight: bold;
+  color: #115c07;
+  margin-right: 20px;
+}
+
+.divider5 {
+  width: 100%;
+  background-color: rgb(221, 221, 221);
+  height: 1px;
+}

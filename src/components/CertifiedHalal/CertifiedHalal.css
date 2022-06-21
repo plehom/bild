@@ -1,0 +1,82 @@
+.CertifiedHalal {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #a4d232;
+}
+
+.CertifiedHalalContainer {
+  max-width: 1500px;
+  width: 90%;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.CertifiedHalalContainer > img {
+  max-width: 300px;
+  width: 90%;
+}
+
+@media (max-width: 960px) {
+  .CertifiedHalalContainer {
+    width: 60%;
+  }
+  .CertifiedHalalContainer > img {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 600px) {
+  .CertifiedHalalContainer > img {
+    max-width: 200px;
+  }
+  .CertifiedHalalContainer {
+    width: 90%;
+  }
+}
+
+.CertifiedHalalContainer > div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: left;
+}
+
+.CertifiedHalalContainer > div > div {
+  display: flex;
+}
+
+.greenBigText {
+  font-family: "Maven Pro", sans-serif;
+  color: #115c07;
+  font-size: var(--header-mobile);
+  font-weight: bold;
+}
+
+.whiteBigText {
+  font-family: "Maven Pro", sans-serif;
+  color: white;
+  font-size: var(--header-mobile);
+  font-weight: bold;
+  margin: 1em 0;
+
+}
+
+.smallText {
+  font-family: "Maven Pro", sans-serif;
+  color: white;
+  font-size: var(--text-mobile-small);
+}
+
+.whiteBackgroundText {
+  font-family: "Maven Pro", sans-serif;
+  color: #a4d232;
+  background-color: white;
+  padding: 3px;
+  font-size: var(--text-mobile-small);
+  white-space: nowrap;
+}

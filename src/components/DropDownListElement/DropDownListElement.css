@@ -1,0 +1,29 @@
+.DropDownListElement > div > div > img {
+  width: min(5vw, 25px);
+}
+
+.DropDownListElement > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.DropDownListElement > div:hover {
+  background-color: rgb(235, 235, 235);
+}
+
+.DropDownListElement > div > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.DropDownListElement > div > div > span {
+  color: rgb(0, 0, 0);
+  font-family: "Maven Pro", sans-serif;
+  font-size: min(3vw, 15px);
+  margin-left: min(3vw, 10px);
+  margin-right: min(5vw, 30px);
+}

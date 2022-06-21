@@ -1,0 +1,75 @@
+.TopBarContainer {
+  background-color: #115c07;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+}
+
+.TopBarContainer2 {
+  width: 95%;
+  max-width: 1500px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.TopBarRightSide {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.TopBarDropDownMenu {
+  position: absolute;
+  right: 0;
+  height: calc(100vh - 35px);
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  background-color: #115c07;
+  padding-bottom: min(5%, 20px);
+  transition: all ease 0.3s;
+  animation: slide 0.2s ease;
+  z-index: 300;
+  overflow-y: scroll;
+}
+
+.TopBarDropDownMenu::-webkit-scrollbar {
+  width: 0;
+}
+
+.TopBarDropDownMenu > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#dropDownMenuIcon:hover {
+  cursor: pointer;
+}
+
+#dropDownMenuIcon {
+  width: min(4vw, 25px);
+}
+
+.TopBarLeftSide {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}

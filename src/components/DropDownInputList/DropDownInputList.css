@@ -1,0 +1,45 @@
+.DropDownInputList {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.DropDownInputListHeader {
+  background-color: white;
+  border: 1px solid rgb(238, 238, 238);
+  padding: 1em;
+  width: calc(100% - 2em);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.DropDownInputListHeader > img {
+  width: 1.2em;
+}
+
+.DropDownInputListHeader > span {
+  font-size: clamp(4px, 4vw, 16px);
+}
+
+.DropDownInputListList {
+  background-color: white;
+  width: 100%;
+  border-right: 1px solid rgb(223, 223, 223);
+  border-left: 1px solid rgb(223, 223, 223);
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.DropDownInputListList > span {
+  width: calc(100% - 4em);
+  padding: 0.5em 2em 0.5em 2em;
+}
+
+.DropDownInputListList > span:hover {
+  background-color: rgb(231, 231, 231);
+}

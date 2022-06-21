@@ -1,0 +1,42 @@
+.HeyMunchen {
+  display: flex;
+  justify-content: center;
+  padding-top: min(15%, 40px);
+  padding-bottom: min(10%, 40px);
+  width: 100%;
+}
+
+.HeyMunchenContainer {
+  max-width: 1500px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#HeyMunchenHeader {
+  max-width: min(50vw, 700px);
+  width: 100%;
+}
+
+#Van {
+  max-width: min(80vw, 1100px);
+  padding: min(5vw, 30px);
+  padding-top: min(6vw, 50px);
+  width: 100%;
+}
+
+#HeyMunchenText {
+  max-width: min(50vw, 700px);
+  width: 100%;
+}
+
+.HeyMunchenContainer > span {
+  font-family: "Maven Pro", sans-serif;
+  color: #115c07;
+  font-size: min(7vw, 28px);
+  text-decoration-line: underline;
+  margin-top: min(7vw, 40px);
+  margin-bottom: min(7vw, 40px);
+  text-align: center;
+}

@@ -1,0 +1,101 @@
+.History {
+  width: 90%;
+  height: fit-content;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.HistoryContent {
+  width: 100%;
+  position: relative;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.TimeLine {
+  margin: 1em 0;
+  margin-top: 2em;
+  width: calc(95% - 1.5em * 0.3);
+  /* padding: 0 calc(18px + 1.5em * 0.61); */
+  height: 0.4em;
+  background-color: rgb(218, 218, 218);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Pointer {
+  width: 1.5em;
+  height: 1.5em;
+  background-color: white;
+  visibility: hidden;
+  transform: rotate(-45deg) translateY(calc(1.5em * 0.3))
+    translateX(calc(-1.5em * 0.3));
+}
+
+.PointersContainer {
+  position: absolute;
+  bottom: 1px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+}
+
+.Dot {
+  width: 0.5em;
+  height: 0.5em;
+  background-color: white;
+  border-radius: 50%;
+  border: 0.3em solid rgb(187, 187, 187);
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Dot > span {
+  position: absolute;
+  bottom: -300%;
+}
+
+.Dot::after {
+  content: "";
+  width: 2em;
+  height: 2em;
+  position: absolute;
+  top: -150%;
+  left: -150%;
+  display: flex;
+}
+
+.HistoryText {
+  display: none;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 3em 18px;
+}
+
+.HistoryText > img {
+  width: 7em;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  margin-left: 3em;
+  border: 0.3em solid var(--dark-green);
+}
+
+.HistoryText > div {
+  width: 75%;
+  padding-right: 1em;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+}

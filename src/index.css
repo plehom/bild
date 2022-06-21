@@ -1,0 +1,132 @@
+:root {
+  --dark-green: #115c07;
+  --dark-green-hover: #114709;
+  --dark-green-disabled: #556453;
+  --light-grey: #f3f3f3;
+  --dark-green-filter: brightness(0) saturate(100%) invert(20%) sepia(68%)
+    saturate(2052%) hue-rotate(83deg) brightness(97%) contrast(94%);
+  --dark-filter: brightness(0) saturate(100%);
+  --white-filter: brightness(0) saturate(100%) invert(100%) sepia(0%)
+    saturate(7500%) hue-rotate(359deg) brightness(106%) contrast(105%);
+  --light-grey-filter: brightness(0) saturate(100%) invert(74%) sepia(1%)
+    saturate(357%) hue-rotate(50deg) brightness(94%) contrast(85%);
+  --light-green: #a5cc25;
+  --light-green-hover: #87a71d;
+
+  --header-mobile: clamp(22px, 8vw, 32px);
+  --text-mobile: clamp(18px, 5vw, 25px);
+  --text-mobile-small: clamp(15px, 5vw, 22px);
+}
+
+.link-text {
+  color: var(--dark-green) !important;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.small-header {
+  font-size: clamp(9px, 4vw, 18px);
+}
+
+.header {
+  font-size: clamp(20px, 6vw, 35px);
+}
+
+.big-header {
+  font-size: clamp(14px, 6vw, 45px);
+}
+
+.small-text {
+  font-size: clamp(9px, 4vw, 15px);
+}
+
+.bottom-menu-text {
+  font-size: clamp(5px, 3vw, 15px);
+}
+
+.text {
+  font-size: clamp(10px, 4vw, 19px);
+}
+
+.big-text {
+  font-size: clamp(7px, 5vw, 22px);
+}
+
+.biger-text {
+  font-size: clamp(15px, 5vw, 27px);
+}
+
+.text-line-height {
+  line-height: 1.4em;
+}
+
+.margin-bottom-0-5 {
+  margin-bottom: 0.5em;
+}
+.margin-bottom-1 {
+  margin-bottom: 1em;
+}
+
+.margin-bottom-2 {
+  margin-bottom: 2em;
+}
+
+.margin-top-1 {
+  margin-top: 1em;
+}
+
+.margin-top-2 {
+  margin-top: 2em;
+}
+
+.margin-right-1 {
+  padding-right: 1em;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-dark-green {
+  color: var(--dark-green);
+}
+.text-light-green {
+  color: var(--light-green);
+}
+
+.text-white {
+  color: white;
+}
+
+.text-black {
+  color: black !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--dark-green);
+  border-radius: 1em;
+  border: 0.2vw solid white;
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: clamp(8px, 1.2vw, 15px);
+}
+
+body {
+  margin: 0;
+  font-family: "Maven Pro", sans-serif, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* overflow: hidden; */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

@@ -1,0 +1,51 @@
+.DeliveryPartners {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: min(7%, 30px);
+  padding-bottom: min(10%, 80px);
+}
+
+.DeliveryPartners > span {
+  font-family: "Maven Pro", sans-serif;
+  color: black;
+  font-size: min(8vw, 40px);
+  font-weight: bold;
+  margin-bottom: min(15vw, 90px);
+}
+
+.DeliveryPartners > div {
+  max-width: 1500px;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.DeliveryPartners > div > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.DeliveryPartners > div > div > img {
+  /* max-height: min(20vw, 70px);
+  height: 100%;
+  max-width: min(50vw, 80%);
+  height: 100%; */
+  height: clamp(80px, 12vw, 110px);
+
+  /* max-width: 90%; */
+  object-fit: contain;
+  width: auto;
+  resize: both;
+}
+
+@media (max-width: 1350px) {
+  .DeliveryPartners > div > div > img {
+    height: clamp(50px, 12vw, 80px);
+    max-width: 20%;
+    object-fit: contain;
+  }
+}

@@ -1,0 +1,124 @@
+.BottomMenu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* padding: 20px; */
+  padding-top: clamp(1em, 5vw, 50px);
+  padding-bottom: clamp(1em, 5vw, 50px);
+}
+
+.BottomMenuContainer {
+  max-width: 1500px;
+  height: 100%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ListDivsContainer {
+  display: flex;
+  flex-direction: row;
+  max-width: 900px;
+  width: 100%;
+  max-width: 800px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+@media (min-width: 1500px) {
+  .ListDivsContainer {
+    height: 500px;
+  }
+}
+
+@media (min-width: 650px) {
+  .ListDivsContainer {
+    height: 300px;
+  }
+}
+
+.BottomMenuHeader {
+  font-family: "Maven Pro", sans-serif;
+  color: #115c07;
+  font-size: clamp(6px, 6vw, 22px);
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.BottomMenuText {
+  font-family: "Maven Pro", sans-serif;
+  color: black;
+  font-size: clamp(3px, 5vw, 16px);
+  cursor: pointer;
+  width: 80%;
+}
+
+@media (max-width: 1500px) {
+  .BottomMenuText {
+    width: 100%;
+  }
+}
+
+.paddingTopShortVersion {
+  padding: 0.4em 0;
+}
+
+@media (min-width: 1500px) {
+  .paddingTopShortVersion {
+    padding: 0;
+  }
+}
+
+.LongDiv {
+  max-width: 800px;
+  width: 100%;
+}
+
+.VerticalDiv {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 100%;
+  /* align-items: center; */
+}
+
+@media (max-width: 650px) {
+  .VerticalDiv {
+    height: 100%;
+  }
+}
+
+.ListDiv {
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 650px) {
+  .ListDiv {
+    height: fit-content;
+  }
+}
+
+.ContactInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.ContactInfo > div {
+  width: 100%;
+  display: flex;
+  font-family: "Maven Pro", sans-serif;
+  font-size: clamp(3px, 4vw, 16px);
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1.5em;
+}
+
+.ContactInfo > div > img {
+  width: min(7vw, 25px);
+  margin-right: 2em;
+}

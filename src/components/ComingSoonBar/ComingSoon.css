@@ -1,0 +1,168 @@
+.ComingSoon {
+  width: 100%;
+  background-color: #115c07;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.CommingSoonContainer {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../../icons/Group 5019backgroundComingSoon (1).png");
+
+  grid-template-columns: 2fr 8fr 10fr;
+  grid-template-rows: 3fr 4fr 0.5fr;
+  grid-template-areas:
+    ". . ."
+    ". content .";
+  max-width: 1920px;
+  min-width: 1500px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ComingSoonContent {
+  grid-area: content;
+  width: 100%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.deliveryManPng{
+  margin-top: 10%;
+}
+
+.CommingSoonContainer > img {
+  max-width: min(80%, 300px);
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+@media (max-width: 499px) {
+  .CommingSoonContainer > img {
+    max-width: min(40%, 150px);
+  }
+}
+
+.SearchBarContainer2 {
+  height: fit-content;
+  width: 100%;
+  max-width: 400px;
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.SearchBarContainer2 > div > input {
+  border: none;
+  width: calc(100% - 1em);
+  padding: 0 0.5em;
+  height: clamp(10px, 8vw, 40px);
+  background-color: rgb(245, 245, 245);
+  font-family: "Maven Pro", sans-serif;
+  font-size: min(3vw, 16px);
+}
+
+.SearchBarContainer2 > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media (max-width: 500px) {
+  .SearchBarContainer2 > div {
+    width: 100%;
+  }
+
+  .SearchBarContainer2 > div > input {
+    width: 100%;
+  }
+}
+
+.SearchBarContainer2 > button {
+  cursor: pointer;
+  width: 100%;
+  height: clamp(10px, 8vw, 40px);
+  border: none;
+  white-space: nowrap;
+  font-family: "Maven Pro", sans-serif;
+  color: white;
+  font-size: min(3vw, 16px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+.SearchBarContainer2 > div > button {
+  border: none;
+  white-space: nowrap;
+  height: clamp(10px, 8vw, 40px);
+  cursor: pointer;
+  font-family: "Maven Pro", sans-serif;
+  color: white;
+  background-color: var(--light-green);
+  font-size: min(3vw, 16px);
+  padding: 0 1em;
+}
+
+.CommingSoonContainer > div > span {
+  font-family: "Maven Pro", sans-serif;
+  color: white;
+  text-align: left;
+}
+
+.ComingSoonHeader {
+  font-size: min(5vw, 45px);
+  font-weight: bold;
+}
+
+@media (max-width: 500px) {
+  .ComingSoonHeader {
+    font-size: clamp(14px, 7vw, 30px);
+    margin-bottom: 1em;
+  }
+}
+
+.ComingSoonText {
+  font-size: min(3vw, 18px);
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: start;
+}
+
+.MobilePicture {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Circle {
+  position: absolute;
+}
+
+.Circle1 {
+  left: -45%;
+  top: 10%;
+  height: 50%;
+}
+.Circle2 {
+  /* transform: translateX(50%); */
+  right: -30%;
+  bottom: 0;
+  height: 50%;
+}
+
+.DeliveryMan {
+  height: clamp(100px, 100vw, 400px);
+  z-index: 1;
+}
+

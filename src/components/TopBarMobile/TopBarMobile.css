@@ -1,0 +1,87 @@
+.TopMenuMobile {
+  width: 100%;
+  background-color: var(--dark-green);
+  display: flex;
+  flex-direction: column;
+}
+
+.TopMenuMobileIcons {
+  display: grid;
+  /* flex-direction: row;
+  align-items: center;
+  justify-content: space-between; */
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1.2em 1.2em;
+}
+
+.TopMenuMobileIcons > div {
+  /* width: calc(clamp(10px, 10vw, 24px) * 2 + 1em); */
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.TopMenuMobileIcons > div > img:nth-child(1) {
+  margin-right: 0.9em;
+}
+
+.icon {
+  height: clamp(10px, 10vw, 24px);
+  filter: var(--white-filter);
+  align-self: center;
+  cursor: pointer;
+}
+
+.logo {
+  height: clamp(10px, 10vw, 40px);
+  width: 100%;
+  cursor: pointer;
+}
+.TopMenuMobileSearchBar {
+  padding: 1em 1.2em;
+  padding-top: 0;
+  height: clamp(20px, 10vw, 45px);
+}
+
+.SideMenuContainer {
+  position: absolute;
+  left: 0;
+  height: calc(
+    100vh - 4.6em - clamp(10px, 10vw, 40px) - clamp(20px, 10vw, 45px)
+  );
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+  align-items: flex-end;
+  /* padding-left: 2.5%;
+  padding-right: 2.5%; */
+  padding: 0 0.5em;
+
+  background-color: #115c07;
+  padding-bottom: min(5%, 20px);
+  transition: all ease 0.3s;
+  animation: slide2 0.2s ease;
+  z-index: 100;
+  overflow-y: scroll;
+}
+
+.SideMenuContainer::-webkit-scrollbar {
+  width: 0;
+}
+
+.SideMenuContainer > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+@keyframes slide2 {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}

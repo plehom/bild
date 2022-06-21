@@ -1,0 +1,52 @@
+.LanguageDropDown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  width: 80%;
+  max-width: 230px;
+  position: relative;
+  background-color: white;
+  height: min-content;
+  z-index: 30;
+  position: relative;
+}
+
+.LanguageDropDownHeader {
+  font-size: clamp(3px, 2vh, 16px);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0.5em 0;
+}
+
+.LanguageDropDownHeader > img {
+  height: 1.3em;
+  padding: 0 0.5em;
+  filter: var(--dark-filter);
+}
+
+.LanguageDropDownOptions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+
+  background-color: white;
+}
+
+.LanguageDropDownOptions > span {
+  font-size: clamp(3px, 2vh, 16px);
+  padding: 0.5em 0;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.LanguageDropDownOptions > span:hover {
+  background-color: rgb(231, 231, 231);
+}

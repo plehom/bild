@@ -1,0 +1,34 @@
+.DropDownMulti > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: clamp(20px, 8vw, 50px);
+  justify-content: space-between;
+  /* padding: 1em 0; */
+}
+
+.DropDownMulti > div > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.SmallCheckbox {
+  width: 0.8em;
+  height: 0.8em;
+  margin-right: 1em;
+  border: 2px var(--dark-green) solid;
+}
+
+.DropDownMulti > div > div > img {
+  width: 1.5em;
+  max-height: 1.7em;
+  margin: 0 1em;
+}
+
+.divider100 {
+  width: 100%;
+  height: 1px !important;
+  background-color: rgb(238, 238, 238);
+}

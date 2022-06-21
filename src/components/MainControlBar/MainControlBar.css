@@ -1,0 +1,114 @@
+.MainControlBar {
+  padding-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1200px) {
+  .MainControlBar {
+    padding-top: clamp(50px, 10vw, 70px);
+  }
+}
+@media (max-width: 600px) {
+  .MainControlBar {
+    padding-top: 0.5em;
+  }
+}
+
+.MainControlBarContainer {
+  width: 90%;
+  max-width: 1500px;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.SearchBarLogo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+@media (max-width: 1200px) {
+  .SearchBarLogo {
+    width: fit-content;
+  }
+}
+
+.logo {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  margin-right: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.SearchBarContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* min-height: 40px; */
+  height: min(15vw, 90px);
+
+  max-width: 800px;
+  width: 100%;
+}
+
+.Regional {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+
+  margin-top: 2px;
+}
+
+.Regional > span {
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Maven Pro", sans-serif;
+  margin-right: 7px;
+}
+
+.devider2 {
+  width: 1px;
+  height: 1rem;
+  background-color: rgb(207, 207, 207);
+}
+
+.Regional > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Regional > div > span {
+  color: black;
+  font-size: 11px;
+  white-space: nowrap;
+  font-family: "Maven Pro", sans-serif;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.Regional > div > span {
+  cursor: pointer;
+}
+
+.Buttons {
+  max-width: 450px;
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}

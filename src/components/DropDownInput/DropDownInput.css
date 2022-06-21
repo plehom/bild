@@ -1,0 +1,25 @@
+.DropDownInput {
+  width: 100%;
+  position: relative;
+  background-color: blue;
+}
+
+.DropDownInput > input {
+  border: none;
+
+  padding: 0.5em;
+  width: calc(100% - 1em);
+  font-family: "Maven Pro", sans-serif;
+  font-size: clamp(5px, 5vw, 16px);
+  border: 1px solid rgb(223, 223, 223);
+  color: black;
+}
+
+.DropDownInput > input::placeholder {
+  color: rgb(156, 156, 156);
+}
+
+.DropDownInputListContainer {
+  width: 100%;
+  position: absolute;
+}

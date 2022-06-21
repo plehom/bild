@@ -1,0 +1,31 @@
+.ButtonWithDropDown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ButtonWithDropDown:hover {
+  cursor: pointer;
+}
+
+.ButtonWithDropDown > span {
+  color: black;
+  font-size: min(3vw, 14px);
+  font-family: "Maven Pro", sans-serif;
+  margin-top: 5px;
+}
+
+.ButtonWithDropDown > img {
+  height: min(5vw, 35px);
+}
+
+.cartNumber {
+  position: absolute;
+
+  right: -0.5em;
+  top: -1em;
+  padding: 0.1em 0.4em;
+  background-color: var(--dark-green);
+  border-radius: 50%;
+}

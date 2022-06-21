@@ -1,0 +1,46 @@
+.PaymentMethods {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3em 0;
+}
+
+.PaymentMethods > span {
+  font-family: "Maven Pro", sans-serif;
+  color: black;
+  font-size: min(8vw, 40px);
+  font-weight: bold;
+  margin-bottom: 1.5em;
+  /* margin-bottom: min(15vw, 90px); */
+}
+
+.PaymentMethods > div {
+  max-width: 1500px;
+  width: 90%;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.PaymentMethods > div > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.PaymentMethods > div > img {
+  height: clamp(80px, 12vw, 90px);
+
+  max-width: min(200px, 60%);
+  object-fit: contain;
+}
+
+@media (max-width: 1630px) {
+  .PaymentMethods > div > div > img {
+    height: clamp(50px, 12vw, 80px);
+    max-width: 20%;
+    object-fit: contain;
+  }
+}
